@@ -40,18 +40,18 @@ CREATE TABLE Songs (
 
 
 CREATE TABLE History (
-	id INT PRIMARY KEY AUTO_INCREMENT,
   	user_id INT NOT NULL,
   	song_id INT NOT NULL,
   	played_date TIMESTAMP DEFAULT NOW(),
+	CONSTRAINT PRIMARY KEY (user_id, song_id),
   	FOREIGN KEY (user_id) REFERENCES User(id),
   	FOREIGN KEY (song_id) REFERENCES Songs(id)
 );
 
 CREATE TABLE Following (
-	id INT PRIMARY KEY AUTO_INCREMENT,
   	user_id INT NOT NULL,
   	artist_id INT NOT NULL,
+	CONSTRAINT PRIMARY KEY (user_id, artist_id),
   	FOREIGN KEY (user_id) REFERENCES User(id),
   	FOREIGN KEY (artist_id) REFERENCES Artist(id)
 );
