@@ -1,6 +1,6 @@
 <h1 align="left">Projeto MySQL One For All</h1>
 
-###
+
 
 <h4 align="left">Este projeto trabalhou conceitos como manipulação de strings, condicionais, funções matemáticas, datas, funções de agregação, filtração de dados de forma agrupada, JOINs, Database Design e Normalização.</h4>
 
